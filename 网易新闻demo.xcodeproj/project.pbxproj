@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE37A2CE1B20134800F97299 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2BF1B20134800F97299 /* HomeViewController.m */; };
+		CE37A2CF1B20134800F97299 /* SubTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2C11B20134800F97299 /* SubTableController.m */; };
+		CE37A2D01B20134800F97299 /* BottomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2C51B20134800F97299 /* BottomCellView.m */; };
+		CE37A2D11B20134800F97299 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2C71B20134800F97299 /* HomeCell.m */; };
+		CE37A2D21B20134800F97299 /* ToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2C91B20134800F97299 /* ToolButton.m */; };
+		CE37A2D31B20134800F97299 /* ToolScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2CB1B20134800F97299 /* ToolScrollView.m */; };
+		CE37A2D41B20134800F97299 /* TopCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2CD1B20134800F97299 /* TopCellView.m */; };
+		CE37A2D91B2013ED00F97299 /* UIView+WYDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2D81B2013ED00F97299 /* UIView+WYDemo.m */; };
+		CE37A2DC1B20144F00F97299 /* UIFont+WYDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2DB1B20144F00F97299 /* UIFont+WYDemo.m */; };
 		CE9AE1111B184608008AAF41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE1101B184608008AAF41 /* main.m */; };
 		CE9AE1141B184608008AAF41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE1131B184608008AAF41 /* AppDelegate.m */; };
-		CE9AE1171B184608008AAF41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE1161B184608008AAF41 /* ViewController.m */; };
 		CE9AE11A1B184608008AAF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE1181B184608008AAF41 /* Main.storyboard */; };
 		CE9AE11C1B184608008AAF41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE11B1B184608008AAF41 /* Images.xcassets */; };
 		CE9AE11F1B184608008AAF41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE11D1B184608008AAF41 /* LaunchScreen.xib */; };
@@ -27,13 +35,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE37A2BE1B20134800F97299 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CE37A2BF1B20134800F97299 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CE37A2C01B20134800F97299 /* SubTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTableController.h; sourceTree = "<group>"; };
+		CE37A2C11B20134800F97299 /* SubTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTableController.m; sourceTree = "<group>"; };
+		CE37A2C41B20134800F97299 /* BottomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomCellView.h; sourceTree = "<group>"; };
+		CE37A2C51B20134800F97299 /* BottomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomCellView.m; sourceTree = "<group>"; };
+		CE37A2C61B20134800F97299 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		CE37A2C71B20134800F97299 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		CE37A2C81B20134800F97299 /* ToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolButton.h; sourceTree = "<group>"; };
+		CE37A2C91B20134800F97299 /* ToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolButton.m; sourceTree = "<group>"; };
+		CE37A2CA1B20134800F97299 /* ToolScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolScrollView.h; sourceTree = "<group>"; };
+		CE37A2CB1B20134800F97299 /* ToolScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolScrollView.m; sourceTree = "<group>"; };
+		CE37A2CC1B20134800F97299 /* TopCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCellView.h; sourceTree = "<group>"; };
+		CE37A2CD1B20134800F97299 /* TopCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCellView.m; sourceTree = "<group>"; };
+		CE37A2D71B2013ED00F97299 /* UIView+WYDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WYDemo.h"; sourceTree = "<group>"; };
+		CE37A2D81B2013ED00F97299 /* UIView+WYDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WYDemo.m"; sourceTree = "<group>"; };
+		CE37A2DA1B20144F00F97299 /* UIFont+WYDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WYDemo.h"; sourceTree = "<group>"; };
+		CE37A2DB1B20144F00F97299 /* UIFont+WYDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WYDemo.m"; sourceTree = "<group>"; };
 		CE9AE10B1B184608008AAF41 /* 网易新闻demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易新闻demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9AE10F1B184608008AAF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9AE1101B184608008AAF41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9AE1121B184608008AAF41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE9AE1131B184608008AAF41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE9AE1151B184608008AAF41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE9AE1161B184608008AAF41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE9AE1191B184608008AAF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE9AE11B1B184608008AAF41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE9AE11E1B184608008AAF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +84,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE37A2BC1B20134800F97299 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				CE37A2BD1B20134800F97299 /* Controller */,
+				CE37A2C21B20134800F97299 /* Model */,
+				CE37A2C31B20134800F97299 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		CE37A2BD1B20134800F97299 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE37A2BE1B20134800F97299 /* HomeViewController.h */,
+				CE37A2BF1B20134800F97299 /* HomeViewController.m */,
+				CE37A2C01B20134800F97299 /* SubTableController.h */,
+				CE37A2C11B20134800F97299 /* SubTableController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE37A2C21B20134800F97299 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE37A2C31B20134800F97299 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE37A2C41B20134800F97299 /* BottomCellView.h */,
+				CE37A2C51B20134800F97299 /* BottomCellView.m */,
+				CE37A2C61B20134800F97299 /* HomeCell.h */,
+				CE37A2C71B20134800F97299 /* HomeCell.m */,
+				CE37A2C81B20134800F97299 /* ToolButton.h */,
+				CE37A2C91B20134800F97299 /* ToolButton.m */,
+				CE37A2CA1B20134800F97299 /* ToolScrollView.h */,
+				CE37A2CB1B20134800F97299 /* ToolScrollView.m */,
+				CE37A2CC1B20134800F97299 /* TopCellView.h */,
+				CE37A2CD1B20134800F97299 /* TopCellView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE37A2D61B20138500F97299 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE37A2D71B2013ED00F97299 /* UIView+WYDemo.h */,
+				CE37A2D81B2013ED00F97299 /* UIView+WYDemo.m */,
+				CE37A2DA1B20144F00F97299 /* UIFont+WYDemo.h */,
+				CE37A2DB1B20144F00F97299 /* UIFont+WYDemo.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		CE9AE1021B184608008AAF41 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +161,10 @@
 		CE9AE10D1B184608008AAF41 /* 网易新闻demo */ = {
 			isa = PBXGroup;
 			children = (
+				CE37A2D61B20138500F97299 /* Category */,
 				CE9AE1121B184608008AAF41 /* AppDelegate.h */,
 				CE9AE1131B184608008AAF41 /* AppDelegate.m */,
-				CE9AE1151B184608008AAF41 /* ViewController.h */,
-				CE9AE1161B184608008AAF41 /* ViewController.m */,
+				CE37A2BC1B20134800F97299 /* HomePage */,
 				CE9AE1181B184608008AAF41 /* Main.storyboard */,
 				CE9AE11B1B184608008AAF41 /* Images.xcassets */,
 				CE9AE11D1B184608008AAF41 /* LaunchScreen.xib */,
@@ -219,9 +299,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9AE1171B184608008AAF41 /* ViewController.m in Sources */,
+				CE37A2D11B20134800F97299 /* HomeCell.m in Sources */,
 				CE9AE1141B184608008AAF41 /* AppDelegate.m in Sources */,
+				CE37A2D01B20134800F97299 /* BottomCellView.m in Sources */,
+				CE37A2D31B20134800F97299 /* ToolScrollView.m in Sources */,
+				CE37A2D21B20134800F97299 /* ToolButton.m in Sources */,
+				CE37A2CF1B20134800F97299 /* SubTableController.m in Sources */,
 				CE9AE1111B184608008AAF41 /* main.m in Sources */,
+				CE37A2D91B2013ED00F97299 /* UIView+WYDemo.m in Sources */,
+				CE37A2CE1B20134800F97299 /* HomeViewController.m in Sources */,
+				CE37A2D41B20134800F97299 /* TopCellView.m in Sources */,
+				CE37A2DC1B20144F00F97299 /* UIFont+WYDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +502,7 @@
 				CE9AE1301B184608008AAF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9AE1311B184608008AAF41 /* Build configuration list for PBXNativeTarget "网易新闻demoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +511,7 @@
 				CE9AE1331B184608008AAF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

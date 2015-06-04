@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C827D17C-EEA6-4667-A19E-59EC0748A7B9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>网易新闻demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E0021F3ABC86D24DA4E3EA5B5008383C457334C3</key>
+		<string>https://github.com/kidneyband/-demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>网易新闻demo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E0021F3ABC86D24DA4E3EA5B5008383C457334C3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kidneyband/-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E0021F3ABC86D24DA4E3EA5B5008383C457334C3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0021F3ABC86D24DA4E3EA5B5008383C457334C3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BBdemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
