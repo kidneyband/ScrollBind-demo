@@ -8,10 +8,11 @@
 
 #import "ToolScrollView.h"
 #import "ToolButton.h"
+#import "UIColor+WYDemo.h"
 
 @interface ToolScrollView()
 
-@property(nonatomic, strong) ToolButton *seletedBtn;
+@property(nonatomic, assign) NSInteger currentIndex;
 
 @property(nonatomic, strong) NSArray *buttonArray;
 
@@ -37,17 +38,6 @@
     }
     return _buttonArray;
 }
-
-
-
--(ToolButton *)seletedBtn{
-    if (!_seletedBtn) {
-        _seletedBtn = [ToolButton buttonWithType:UIButtonTypeSystem];
-        
-    }
-    return _seletedBtn;
-}
-
 
 
 
@@ -79,22 +69,37 @@
     return self;
 }
 
--(void)changeIndicatorFrame:(CGFloat)shouldOffsetX{
-    
-    [UIView animateWithDuration:0.2f animations:^{
-        self.indicatorView.frame = CGRectMake(shouldOffsetX, toolScrollViewH - 3, [UIScreen mainScreen].bounds.size.width / minimumNum, 3);
+-(void)changeIndicatorFrame:(CGFloat)shouldOffsetX fromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex offsetRatio:(CGFloat)offsetRatio{
+    if (offsetRatio > 1) {
+        [UIView animateWithDuration:0.2f animations:^{
+            self.indicatorView.frame = CGRectMake(shouldOffsetX, toolScrollViewH - 3, [UIScreen mainScreen].bounds.size.width / minimumNum, 3);
+            
+        }];
+    }else{
         
-    }];
+        NSLog(@"fromIndex: %ld  toIndex: %ld", (long)fromIndex, (long)toIndex);
+        UIButton *fromBtn = [self.buttonArray objectAtIndex:fromIndex];
+        UIButton *toBtn = [self.buttonArray objectAtIndex:toIndex];
+        [UIView animateWithDuration:0.2f animations:^{
+            self.indicatorView.frame = CGRectMake(shouldOffsetX, toolScrollViewH - 3, [UIScreen mainScreen].bounds.size.width / minimumNum, 3);
+            [fromBtn setTitleColor:RGB(255.0*(1-offsetRatio), 0, 0) forState:UIControlStateNormal];
+            [toBtn setTitleColor:RGB(255.0*offsetRatio, 0, 0) forState:UIControlStateNormal];
+        }];
+    }
 }
 
 
 -(void)btnOnClickWithTag:(NSInteger)btnTag{
     
     self.option(btnTag);
-    ToolButton *btn = [self.buttonArray objectAtIndex:btnTag];
-    self.seletedBtn.selected = NO;
-    btn.selected = YES;
-    self.seletedBtn = btn;
+    self.currentIndex = btnTag;
+    for (ToolButton *btn in self.buttonArray) {
+        if (btnTag == btn.tag) {
+            [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        }else{
+            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
+    }
     
     CGFloat commonWidth = [UIScreen mainScreen].bounds.size.width / minimumNum;
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;

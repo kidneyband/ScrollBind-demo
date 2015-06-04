@@ -16,6 +16,7 @@
 		CE37A2D41B20134800F97299 /* TopCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2CD1B20134800F97299 /* TopCellView.m */; };
 		CE37A2D91B2013ED00F97299 /* UIView+WYDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2D81B2013ED00F97299 /* UIView+WYDemo.m */; };
 		CE37A2DC1B20144F00F97299 /* UIFont+WYDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2DB1B20144F00F97299 /* UIFont+WYDemo.m */; };
+		CE37A2EB1B20665700F97299 /* UIColor+WYDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A2EA1B20665700F97299 /* UIColor+WYDemo.m */; };
 		CE9AE1111B184608008AAF41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE1101B184608008AAF41 /* main.m */; };
 		CE9AE1141B184608008AAF41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE1131B184608008AAF41 /* AppDelegate.m */; };
 		CE9AE11A1B184608008AAF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE1181B184608008AAF41 /* Main.storyboard */; };
@@ -53,6 +54,8 @@
 		CE37A2D81B2013ED00F97299 /* UIView+WYDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WYDemo.m"; sourceTree = "<group>"; };
 		CE37A2DA1B20144F00F97299 /* UIFont+WYDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WYDemo.h"; sourceTree = "<group>"; };
 		CE37A2DB1B20144F00F97299 /* UIFont+WYDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WYDemo.m"; sourceTree = "<group>"; };
+		CE37A2E91B20665700F97299 /* UIColor+WYDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WYDemo.h"; sourceTree = "<group>"; };
+		CE37A2EA1B20665700F97299 /* UIColor+WYDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WYDemo.m"; sourceTree = "<group>"; };
 		CE9AE10B1B184608008AAF41 /* 网易新闻demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易新闻demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9AE10F1B184608008AAF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9AE1101B184608008AAF41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				CE37A2D81B2013ED00F97299 /* UIView+WYDemo.m */,
 				CE37A2DA1B20144F00F97299 /* UIFont+WYDemo.h */,
 				CE37A2DB1B20144F00F97299 /* UIFont+WYDemo.m */,
+				CE37A2E91B20665700F97299 /* UIColor+WYDemo.h */,
+				CE37A2EA1B20665700F97299 /* UIColor+WYDemo.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE37A2EB1B20665700F97299 /* UIColor+WYDemo.m in Sources */,
 				CE37A2D11B20134800F97299 /* HomeCell.m in Sources */,
 				CE9AE1141B184608008AAF41 /* AppDelegate.m in Sources */,
 				CE37A2D01B20134800F97299 /* BottomCellView.m in Sources */,

@@ -85,6 +85,7 @@
     self.scrollView.backgroundColor = [UIColor redColor];
     self.scrollView.delegate = self;
     self.scrollView.scrollsToTop = NO;
+    self.scrollView.bounces = NO;
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
     self.scrollView.pagingEnabled = YES;
@@ -116,10 +117,23 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSLog(@"scrollViewDidScroll");
     CGFloat offsetX = self.scrollView.contentOffset.x;
-    CGFloat shouldOffsetX = offsetX/minimumNum;
-    [self.toolScrollView changeIndicatorFrame:shouldOffsetX];
+    CGFloat shouldOffSetX = offsetX/minimumNum;
+    CGFloat offsetRatio = (NSUInteger)offsetX % (NSUInteger)ScreenWidth / ScreenWidth;
+    NSInteger fromIndex = (offsetX + ScreenWidth / 2) / ScreenWidth;
+    if (offsetX != fromIndex * ScreenWidth) {
+        NSInteger toIndex = offsetX > fromIndex * ScreenWidth ? fromIndex + 1: fromIndex - 1;
+        if (fromIndex > toIndex) {
+            offsetRatio = 1 - offsetRatio;
+        }
+        [self.toolScrollView changeIndicatorFrame:shouldOffSetX fromIndex:fromIndex toIndex:toIndex offsetRatio: offsetRatio];
+    }else{
+        [self.toolScrollView changeIndicatorFrame:shouldOffSetX fromIndex:0 toIndex:0 offsetRatio:2];
+    }
+    NSLog(@"scrollViewDidScroll");
+
     
 }
+
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSLog(@"scrollViewDidEndDecelerating");

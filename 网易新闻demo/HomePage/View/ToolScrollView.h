@@ -16,7 +16,7 @@
 -(instancetype)initWithFrame:(CGRect)frame configArray:(NSArray *)configArray;
 
 -(void)btnOnClickWithTag:(NSInteger)btnTag;
--(void)changeIndicatorFrame:(CGFloat)shouldOffsetX;
+-(void)changeIndicatorFrame:(CGFloat)shouldOffsetX fromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex offsetRatio:(CGFloat)offsetRatio;
 
 @property(nonatomic, copy) void(^option)(NSInteger index);
 
