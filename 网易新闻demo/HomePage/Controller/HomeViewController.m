@@ -32,6 +32,7 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor clearColor];
+    self.selectedIndex = -1;
     
     NSDictionary *dict0 = @{@"CategoreTitle": @"最新", @"url": @"http://www.google.com"};
     NSDictionary *dict1 = @{@"CategoreTitle": @"产品", @"url": @"http://www.google.com"};
@@ -61,7 +62,10 @@
         [strongSelf.scrollView setContentOffset:CGPointMake(ScreenWidth * index, 0)];
         NSArray *array = strongSelf.childViewControllers;
         SubTableController *vc = [array objectAtIndex:index];
-        [vc refreshData];
+        if (strongSelf.selectedIndex != index) {
+            [vc refreshData];
+            strongSelf.selectedIndex = index;
+        }
         //将数组中其他vc的ScrollToTop禁用掉
         for (int i = 0; i < array.count; i++) {
             SubTableController *tempVc = [array objectAtIndex:i];
